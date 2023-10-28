@@ -2,5 +2,7 @@
 # This will only return something meaningful if the column contains numeric data
 square_column <- function(data) {
   column_one_square <- data[1] * data[1]
-  return(column_one_square)
+  data[1] <- column_one_square
+  return(data)
 }
+
