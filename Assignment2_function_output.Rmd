@@ -1,0 +1,32 @@
+---
+title: "Assignment2_function_output"
+output: html_document
+date: "2023-10-28"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Sourcing the function, "square_column" from the script "Assignment2_function.R"
+```{r, echo=TRUE}
+source("Assignment2_function.R")
+```
+
+Printing the airquality dataset to show the true original values
+```{r, echo=TRUE}
+head(airquality)
+```
+
+In the first code, I'm using the airquality dataset and squaring the 3rd column using the square_column function. We can see the result below. 
+
+```{r, echo=TRUE}
+squared <- square_column(airquality, 3)
+head(squared)
+```
+
+In the second code, I'm still using the airquality dataset and now squaring the 2nd column using the square_column function. We can see the result below. 
+```{r, echo=TRUE}
+squared <- square_column(airquality, 2)
+head(squared)
+```
